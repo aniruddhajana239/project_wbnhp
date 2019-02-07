@@ -1,0 +1,130 @@
+
+.menu-hover ul li:hover a:hover {background: #3d90d8; color: #fff !important;}
+.navbar-navbar-default .navbar-navbar-nav > .active > a, .navbar-navbar-default .navbar-navbar-nav > .active > a:focus {
+    background: #3d90d8; color: #fff !important;
+}
+
+/** TOP MENU **/
+  .navbar-nav{  
+    vertical-align: top; 
+    display: inline-block;
+  }
+  .navbar-nav ul {
+    margin: 0;
+    padding:0;
+    list-style: none;
+    background: #fff;
+  }
+  .navbar-nav a {
+    color:#777; 
+    text-decoration: none;
+    padding: .8em 1.8em;
+    text-transform: uppercase;
+    font-size: 80%;letter-spacing: 2px;
+    /*text-shadow: 0 -1px 0 #000;*/
+    position: relative;
+  }
+
+  .navbar-nav li{position: relative;}
+  .navbar-nav > li { 
+    float:left; 
+    margin-right: 1px; 
+  } 
+  .navbar-nav > li:hover , .navbar-nav > li:hover >a{ border-bottom: 2px #31acec solid; /*border-bottom-color:#31acec;*/}
+  .navbar-nav li:hover > a { color:#777; }
+  .navbar-nav > li:last-child  { 
+    margin-right: 0;
+  } 
+  .navbar-nav li li a { margin-top:1px}
+  .main-navigation .navbar-nav > li {
+    margin: 0px 0 0 13px !important;
+}
+    .navbar-nav li a:first-child:nth-last-child(2):before { 
+     content:""; 
+     position: absolute; 
+     height:0; 
+     width: 0; 
+     border: 5px solid transparent; 
+     top: 50% ;
+     right:5px;  
+   }
+   /* submenu positioning*/
+.navbar-nav ul {
+  position: absolute;
+  white-space: nowrap;
+  border-bottom: 2px solid  #31acec;
+  z-index: 1;
+  left: -99999em;
+}
+.navbar-nav > li:hover > ul {
+  left: auto;
+  padding-top: 5px  ;
+  min-width: 90%;
+}
+.navbar-nav > li li ul {  border-left:1px solid #fff;}
+.navbar-nav > li li:hover > ul { 
+  left: 100%;
+  top: -1px;
+}
+.navbar-nav > li:hover > a:first-child:nth-last-child(2):before {
+  border: 5px solid transparent; 
+  border-bottom-color: #31acec; 
+  margin-top:-5px
+}
+.navbar-nav li li > a:first-child:nth-last-child(2):before {  
+  border-left-color: #31acec; 
+  margin-top: -5px
+}
+.navbar-nav li li:hover > a:first-child:nth-last-child(2):before {
+  border: 5px solid transparent; 
+  border-right-color: #31acec;
+  right: 10px; 
+}
+/** FOOTER MENU **/
+.bottom-nav { margin:0; padding:0;
+ color:#fff; 
+float: right;
+}
+.bottom-nav li { float:left; list-style:none;  }
+.bottom-nav li:after {
+ content:"|";
+ color:#666;
+}
+.bottom-nav li:last-child:after { content:""; }
+.bottom-nav li a {
+ margin:0 8px;
+ color:#fff; 
+}
+.bottom-nav > li > a {
+    position: relative;
+    display: initial !important;
+    padding: 10px 5px;
+}
+/* .bottom-nav > li:hover , .bottom-nav > li:hover >a{ background: #dddd}*/
+ .bottom-nav li:hover > a { color:#777; }
+
+.site-slogan {
+    font-size: 11px;
+     font-style: normal; 
+    color: #5ab7e6;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.announcement td {
+   text-align: center;   
+}
+
+.overlay{display: none;}
+/*********** Mobule MENU **/
+.responsive-menu-nav {
+/* hide responsive menu from desktop version */
+    display: none;
+}
+@media (max-width: 640px){
+.top-nav {/* hide desktop menu after 640 */
+    display: none;
+}
+.responsive-menu-nav {/* show responsive menu after 640 */
+    display: block;
+}
+}
